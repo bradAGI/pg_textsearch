@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786525320216,
+  "lastUpdate": 1786525328174,
   "repoUrl": "https://github.com/bradAGI/pg_textsearch",
   "entries": {
     "cranfield Benchmarks": [
@@ -9273,6 +9273,40 @@ window.BENCHMARK_DATA = {
           {
             "name": "cranfield_gin - Index Size",
             "value": 0.82,
+            "unit": "MB"
+          }
+        ]
+      }
+    ],
+    "msmarco_gin Benchmarks": [
+      {
+        "commit": {
+          "author": {
+            "name": "Todd J. Green",
+            "username": "tjgreen42",
+            "email": "tjgreen@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "68baccdf82bd3fb3dbee596bbe8ba0400d081d45",
+          "message": "docs: lead the README with the banner image (#424)\n\nReplaces the top-level `# pg_textsearch` heading with the banner image\nso the README opens with the banner, and removes the now-duplicate\nbanner that previously sat below the status line.\n\nDocs-only change; no functional impact.",
+          "timestamp": "2026-08-11T22:54:02Z",
+          "url": "https://github.com/bradAGI/pg_textsearch/commit/68baccdf82bd3fb3dbee596bbe8ba0400d081d45"
+        },
+        "date": 1786525327404,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "msmarco_gin - Index Build Time",
+            "value": 126003.325,
+            "unit": "ms"
+          },
+          {
+            "name": "msmarco_gin - Index Size",
+            "value": 824.93,
             "unit": "MB"
           }
         ]
