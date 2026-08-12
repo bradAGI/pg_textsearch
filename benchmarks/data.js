@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786525536023,
+  "lastUpdate": 1786525543935,
   "repoUrl": "https://github.com/bradAGI/pg_textsearch",
   "entries": {
     "cranfield Benchmarks": [
@@ -9712,6 +9712,50 @@ window.BENCHMARK_DATA = {
           {
             "name": "paradedb_wikipedia (100.0K docs) - Index Size",
             "value": 62.54,
+            "unit": "MB"
+          }
+        ]
+      }
+    ],
+    "paradedb_cranfield_insert Benchmarks": [
+      {
+        "commit": {
+          "author": {
+            "name": "Todd J. Green",
+            "username": "tjgreen42",
+            "email": "tjgreen@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "68baccdf82bd3fb3dbee596bbe8ba0400d081d45",
+          "message": "docs: lead the README with the banner image (#424)\n\nReplaces the top-level `# pg_textsearch` heading with the banner image\nso the README opens with the banner, and removes the now-duplicate\nbanner that previously sat below the status line.\n\nDocs-only change; no functional impact.",
+          "timestamp": "2026-08-11T22:54:02Z",
+          "url": "https://github.com/bradAGI/pg_textsearch/commit/68baccdf82bd3fb3dbee596bbe8ba0400d081d45"
+        },
+        "date": 1786525543172,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "paradedb_cranfield_insert - Index Build Time",
+            "value": 6.1,
+            "unit": "ms"
+          },
+          {
+            "name": "paradedb_cranfield_insert - Insert Time",
+            "value": 63.876,
+            "unit": "ms"
+          },
+          {
+            "name": "paradedb_cranfield_insert - Throughput (avg ms/query)",
+            "value": 92.53,
+            "unit": "ms"
+          },
+          {
+            "name": "paradedb_cranfield_insert - Index Size",
+            "value": 3.05,
             "unit": "MB"
           }
         ]
